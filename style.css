@@ -1,0 +1,178 @@
+body {
+
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(135deg, #b3c7f9, #d8c6ff);
+
+  margin: 0;
+
+  padding: 20px;
+
+  text-align: center;
+
+  color: #333;
+
+}
+
+.map-container {
+
+  position: relative;
+
+  width: 400px;
+
+  height: 400px;
+
+  margin: 0 auto 30px auto;
+
+  background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+
+  border-radius: 20px;box-shadow: 0 0 20px rgba(130,120,200,0.4);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+}
+
+.central-card {
+
+  width: 120px;
+
+  height: 120px;
+
+  background: #7a69f9;
+
+  color: white;
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin: auto;
+
+  box-shadow: 0 0 15px rgba(122,105,249,0.7);
+
+  z-index: 2;
+
+}
+.branch {
+
+  position: absolute;
+
+  background: linear-gradient(135deg, #a8adee, #d7caf7);
+
+  padding: 12px 20px;
+
+  border-radius: 20px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(120,110,180,0.5);
+
+  user-select: none;
+
+  transition: background 0.3s ease, transform 0.2s ease;
+
+}
+
+.branch:hover {
+
+  background: linear-gradient(135deg, #9a90de, #c4b3f2);
+
+  transform: scale(1.05);
+
+}.branch-top { top: 10px; left: 50%; transform: translateX(-50%); }
+
+.branch-bottom { bottom: 10px; left: 50%; transform: translateX(-50%); }
+
+.branch-left { left: 10px; top: 50%; transform: translateY(-50%); }
+
+.branch-right { right: 10px; top: 50%; transform: translateY(-50%); }
+
+.cards-section {
+
+  display: none;
+
+  max-width: 700px;
+
+  margin: 0 auto 30px auto;
+
+  text-align: left;
+
+}
+
+.cards-section.active {
+
+  display: block;
+
+}.card {
+
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 15px;
+
+  margin-bottom: 20px;
+
+  box-shadow: 0 4px 12px rgba(150,140,180,0.15);
+
+  cursor: pointer;
+
+}
+
+.card h3 {
+
+  margin: 0 0 10px 0;
+
+}
+
+.card-content {
+
+  display: none;
+
+  font-size: 0.9rem;
+
+  color: #444;
+
+}
+
+.card-content img {
+max-width: 100%;
+
+  border-radius: 12px;
+
+  margin-top: 10px;
+
+}
+.card img {
+
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  border-radius: 12px;
+
+  margin: 10px 0;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  object-fit: cover;
+
+}
